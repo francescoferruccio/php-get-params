@@ -15,14 +15,14 @@ GOAL: generare 2 file PHP per i due seguenti esercizi
       $cognome = $_GET["surname"];
       $mail = $_GET["mail"];
 
-      if (strpos($mail, ".") && strpos($mail, "@")) {
+      if (strstr($mail, ".") && strstr($mail, "@")) {
         $msg = "OK";
       } else {
         $msg = "KO";
       }
     ?>
   </head>
-  
+
   <body>
     <h2>Benvenuto <?php echo $nome . " " . $cognome; ?></h2>
 
